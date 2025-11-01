@@ -11,14 +11,14 @@ README.md: guessinggame.sh
 	@echo "\`\`\`bash" >> README.md
 	@echo "bash guessinggame.sh" >> README.md
 	@echo "\`\`\`" >> README.md
+	@echo "To remove the README.md file and startover fresh"
 	@echo "\`\`\`" >> README.md
-	@echo "make clean to remove the README.md file and startover" >> README.md
+	@echo "make clean >> README.md
 	@echo "\`\`\`" >> README.md
 
 run: guessinggame.sh README.md
 	@chmod +x guessinggame.sh
-	@./guessinggame.sh
-	@make README.md
+	@bash guessinggame.sh
 
 clean: README.md
 	@rm -f README.md
